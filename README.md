@@ -11,3 +11,4 @@ __printf() function is designed and coded to get various arguments.__
 |Tasks No.|Task Description|
 |:--------|:---------------|
 |Task.0|  Write a function that produces output according to a format.|
+|Task.1|  Handle the following conversion specifiers: d, i|

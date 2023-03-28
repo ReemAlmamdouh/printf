@@ -7,7 +7,7 @@
  *
  * Return: width
  *
- * Author: Ahmed Abdel Nasser & Reem AlMamdouh
+ * Authors: Ahmed Abdel Nasser & Reem AlMamdouh
  * ALX Software Engineering Cohort 12
  */
 int get_width(const char *format, int *i, va_list aList)
@@ -20,12 +20,12 @@ int get_width(const char *format, int *i, va_list aList)
 		if (is_digit(format[curr_i]))
 		{
 			width = width * 10;
-			width = with + format[curr_i] - '0';
+			width = width + format[curr_i] - '0';
 		}
 		else if (format[curr_i] == '*')
 		{
 			curr_i++;
-			width = va_arg(list, int);
+			width = va_arg(aList, int);
 			break;
 		}
 		else
@@ -33,5 +33,6 @@ int get_width(const char *format, int *i, va_list aList)
 			break;
 		}
 	}
-	*i = *curr_i - 1;
+	*i = curr_i - 1;
+	return (width);
 }

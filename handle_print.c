@@ -4,7 +4,7 @@
  *                , based on its type.
  * @format: Pointer to formatted strings
  *          , in order to print the arguments.
- * @ind: Pointer to the current index of the formatted string.
+ * @ind: Pointer to the current index.
  * @argumentsList: List of Arguments To Be Printed.
  * @buffer: Buffer array to handle print.
  * @flags: Parameter that calculates active flags.
@@ -17,7 +17,8 @@
  * Authors: Ahmed Abdel Nasser & Reem Al-Mamdouh.
  * ALX Software Engineering Cohort 12
  */
-int handle_print(const char *format, int *ind, va_list argumentsList, char buffer[],
+int handle_print(const char *format, int *ind,
+	       	va_list argumentsList, char buffer[],
 		int flags, int width, int precision, int size)
 {
 	int i;

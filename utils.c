@@ -5,7 +5,7 @@
  *
  * Return: 1 if true, 0 otherwise.
  *
- * Authors: Ahmed Abdel Nasser & Reem Al-Mahmoud.
+ * Authors: Ahmed Abdel Nasser & Reem Al-Mamdouh.
  * ALX Software Engineering Cohort 12.
  */
 int is_printable(char character)
@@ -23,7 +23,7 @@ int is_printable(char character)
  *
  * Return: 1 if it's a digit, 0 otherwise.
  *
- * Authors: Ahmed Abdel Nasser & Reem Al-Mahmoud.
+ * Authors: Ahmed Abdel Nasser & Reem Al-Mamdouh.
  * ALX Software Engineering Cohort 12.
  */
 int is_digit(char character)
@@ -43,7 +43,7 @@ int is_digit(char character)
  *
  * Return: Always 3
  *
- * Authors: Ahmed Abdel Nasser & Reem Al-Mahmoud.
+ * Authors: Ahmed Abdel Nasser & Reem Al-Mamdouh.
  * ALX Software Engineering Cohort 12.
  */
 int append_hexa_code(char ascii_code, char buffer[], int i)
@@ -71,7 +71,7 @@ int append_hexa_code(char ascii_code, char buffer[], int i)
  *
  * Return: Value of number.
  *
- * Authors: Ahmed Abdel Nasser & Reem Al-Mahmoud.
+ * Authors: Ahmed Abdel Nasser & Reem Al-Mamdouh.
  * ALX Software Engineering Cohort 12.
  */
 long int convert_size_number(long int num, int size)
@@ -94,7 +94,7 @@ long int convert_size_number(long int num, int size)
  *
  * Return: Value of number
  *
- * Authors: Ahmed Abdel Nasser & Reem Al-Mahmoud.
+ * Authors: Ahmed Abdel Nasser & Reem Al-Mamdouh.
  */
 long int convert_size_unsgnd(unsigned long int num, int size)
 {

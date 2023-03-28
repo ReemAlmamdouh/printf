@@ -14,7 +14,7 @@
  *
  * Return: 1 or 2
  *
- * Authors: Ahmed Abdel Nasser & Reem Al-Mahmoud
+ * Authors: Ahmed Abdel Nasser & Reem Al-Mamdouh.
  * ALX Software Engineering Cohort 12
  */
 int handle_print(const char *format, int *ind, va_list argumentsList, char buffer[],

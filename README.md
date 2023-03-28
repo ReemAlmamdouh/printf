@@ -2,6 +2,7 @@
 ### Authors: Reem Al-Mamdouh & Ahmed Abdel Nasser.
 
 ## Background Context
-![images](https://user-images.githubusercontent.com/67245108/228341219-c29d1013-b5e5-437f-9928-83c55a8535a2.png)
+![imageedit_0_3625538568](https://user-images.githubusercontent.com/67245108/228342527-629a4a50-4d9b-4fb5-82b8-3c1060fe941f.jpg)
+
 ### Write your own printf function.
 

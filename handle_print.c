@@ -21,8 +21,7 @@ int handle_print(const char *format, int *ind,
 		va_list argumentsList, char buffer[],
 		int flags, int width, int precision, int size)
 {
-	int i;
-	int argumentLength = 0;
+	int i, argumentLength = 0;
 	int printedCharactersNumber = -1;
 
 	fmt_t format_types[] = {
@@ -38,7 +37,6 @@ int handle_print(const char *format, int *ind,
 			return (format_types[i].fn(argumentsList, buffer, flags,
 						width, precision, size));
 	}
-
 	if (format_types[i].fmt == '\0')
 	{
 		if (format[*ind] == '\0')
@@ -46,9 +44,8 @@ int handle_print(const char *format, int *ind,
 
 		argumentLength = argumentLength + write(1, "%%", 1);
 		if (format[*ind - 1] == ' ')
-		{
 			argumentLength = argumentLength + write(1, " ", 1);
-		}
+
 		else if (width)
 		{
 			--(*ind);

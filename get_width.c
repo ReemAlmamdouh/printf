@@ -3,7 +3,7 @@
  * get_width - A function that calculates the width
  * @format:  Strings format to print the arguments
  * @i: Printed Arguments List
- * @argumentList: List of arguments
+ * @aList: List of arguments
  *
  * Return: width
  *

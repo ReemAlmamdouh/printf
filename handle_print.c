@@ -18,7 +18,7 @@
  * ALX Software Engineering Cohort 12
  */
 int handle_print(const char *format, int *ind,
-	       	va_list argumentsList, char buffer[],
+		va_list argumentsList, char buffer[],
 		int flags, int width, int precision, int size)
 {
 	int i;
@@ -35,18 +35,15 @@ int handle_print(const char *format, int *ind,
 	for (i = 0 ; format_types[i].fmt != '\0' ; i++)
 	{
 		if (format[*ind] == format_types[i].fmt)
-		{
 			return (format_types[i].fn(argumentsList, buffer, flags,
-					       	width, precision, size));
-		}
+						width, precision, size));
 	}
 
 	if (format_types[i].fmt == '\0')
 	{
 		if (format[*ind] == '\0')
-		{
 			return (-1);
-		}
+
 		argumentLength = argumentLength + write(1, "%%", 1);
 		if (format[*ind - 1] == ' ')
 		{
@@ -56,13 +53,11 @@ int handle_print(const char *format, int *ind,
 		{
 			--(*ind);
 			while (format[*ind] != '%' && format[*ind] != ' ')
-			{
 				--(*ind);
-			}
+
 			if (format[*ind] == ' ')
-			{
 				--(*ind);
-			}
+
 			return (1);
 		}
 		argumentLength = argumentLength + write(1, &format[*ind], 1);

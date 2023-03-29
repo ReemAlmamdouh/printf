@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * is_printable A function that checks if character is printable.
+ * is_printable - A function that checks if character is printable.
  * @character: character to be checked.
  *
  * Return: 1 if true, 0 otherwise.
